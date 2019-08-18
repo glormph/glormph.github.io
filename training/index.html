@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+
+<!--
+  2do list
+  - GPS links?
+-->
+<head>
+  <title>Training log</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+
+rect.ttip {
+  fill: black;
+}
+text.ttip {
+  fill: white;
+  font: 10px sans-serif;
+}
+  
+   rect.run {
+      fill: steelblue;
+    }
+   rect.ol {
+      fill: seagreen;
+    }
+   rect.styrke {
+      fill: orange;
+    }
+   .chart .bar.highint {
+     fill: red;
+   }
+   .chart .bar.medint {
+     fill: orange;
+   }
+   .chart .bar.lowint {
+     fill: seagreen;
+   }
+   .chart .bar.noint {
+     fill: lightsteelblue;
+   }
+  
+   rect.highint {
+     fill: red;
+   }
+   rect.medint {
+     fill: orange;
+   }
+   rect.lowint {
+     fill: seagreen;
+   }
+   .axis text {
+    font: 10px sans-serif;
+  }
+  
+  .axis path,
+  .axis line {
+    fill: none;
+    stroke: #000;
+    shape-rendering: crispEdges;
+  }
+  .explanation {
+    background-color: cornsilk;
+    font-size: 0.75rem;
+  }
+
+  
+  .fafa, .emoji {
+    font-family: FontAwesome;
+    font-size: 1.5rem;
+  }
+  </style>
+  <script src="http://d3js.org/d3.v3.min.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"></link>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"></link>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-static-top">
+    <div class="container">
+      <div class="navbar-header">
+	<a class="navbar-brand">Training log</a>
+    <a onclick="loadDraw('2019', 40, 20);" href="#">Latest</a> / <a onclick="loadDraw('2019', -1, -1);" href="#">2019</a> / <a onclick="loadDraw('2018', -1, -1);" href="#">2018</a>
+      </div>
+    </div>
+  </nav>
+
+
+  <div class="container py-5">
+    <h6>Technical satisfaction</h6>
+    <div class="row">
+      <div class="col-lg-5">
+        <svg class="chart" id="olchart"></svg>
+      </div>
+      <div class="col-lg-2 pt-3">
+        <div class="explanation p-3">
+	  My last couple of OL runs
+	  <div>
+	    <svg class="legend" width="150" height="160" >
+	      <g id="ollegend">
+	        <text y="30" class="emoji">&#x1F60D;</text>
+       	        <text x="30" y="30">Among my best!</text>
+	        <text y="150" class="fafa" fill="red">&#xf069;</text>
+       	        <text x="30" y="145">Race</text>
+	      </g>
+	    </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container py-5">
+    <h6>Running load</h6>
+    <div class="row">
+      <div class="col-lg-2 pt-3">
+        <div class="explanation p-3">
+	  Load estimates are defined as percentage of the maximum dose in the current time window. Doses are calculated by time(min.) * intensity (high=3, low=1). Yes, this is very arbitrary.
+        </div>
+      </div>
+      <div class="col-lg-5">
+        <svg class="chart" id="intchart"></svg>
+      </div>
+    </div>
+  </div>
+
+  <div class="container py-5">
+    <h6>All activity</h6>
+        <svg class="chart" id="allchart"></svg>
+  </div> 
+
+  <script>
+
+function type(d) {
+  d.minutes = +d.minutes; // coerce to number
+  return d;
+}
+
+var intmap = {L: 1, M: 2, H: 3},
+  intcolmap = {L: 'lowint', M: 'medint', H: 'highint'},
+  funmap = {1: "highint", 2: "medint", 3: "lowint", 4: "noint"};
+
+var barWidth = 10;
+var margin = {top: 40, right: 30, bottom: 50, left:40},
+  height = 380 - margin.top - margin.bottom,
+  width = 840 - margin.left - margin.right,
+  intwidth = 400 - margin.left - margin.right,
+  olwidth = 300;
+
+function getY(data, height, yGetter) {
+  maxy = d3.max(data, function(d) { return yGetter(d); });
+  return d3.scale.linear()
+    .range([height, 0])
+    .domain([0, maxy * 1.3]);
+}
+
+function makeChart(height, width, svgid, data, x, xIsDate, xGetter, yGetter, ylab, colorclass) {
+
+  var y = getY(data, height, yGetter);
+  var yAxis = d3.svg.axis()
+    .scale(y)
+    .orient("left");
+
+  var svg = d3.select(`#${svgid}`);
+
+  if (xIsDate) {
+    var deltadays = (x.domain()[1] - x.domain()[0]) / 1000 / 3600 / 24;
+    deltadays > 100 ? x.range([0, 1600]) : false;
+    deltadays > 100 ? width = 1600 : false;
+    var bw = x.range()[1] / deltadays - 0.5;
+  } else {
+    var bw = x.rangeBand();
+  }
+
+  svg.selectAll("g").remove();
+  chart = svg
+    .attr("height", height + margin.top + margin.bottom)
+    .attr("width", width + margin.left + margin.right)
+  .append("g")
+    .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+  var xAxis = d3.svg.axis()
+    .scale(x)
+    .ticks(xIsDate ? 4 : 0)
+    .orient("bottom");
+  if (!xIsDate) {
+    xAxis.tickFormat("");
+  }
+
+  maxy = d3.max(data, function(d) { return yGetter(d); });
+  var ttip = svg.append("g")
+    .attr("transform", "translate(" + margin.left + "," + margin.top + ")")
+  ;
+
+  var ttrec_w = 250,
+    ttrec_h = 50;
+
+  var ttrec = ttip.append("rect")
+    .attr("class", "ttip")
+    .attr("opacity", 0)
+    .attr("width", ttrec_w)
+    .attr("height", ttrec_h)
+  ;
+  var tttri = ttip.append("polygon")
+    .attr("opacity", 0)
+    .attr("class", "ttip");
+  var tttxt = ttip.append("text")
+    .attr("class", "ttip");
+
+
+  var bar = chart.selectAll(".bar")
+    .data(data)
+    .enter().append("rect")
+    .attr("y", function(d) { return y(yGetter(d)); })
+    .attr("x", function(d) { return x(xGetter(d)); })
+    .attr("width", bw)
+    .attr("height", function(d) { return height - y(yGetter(d)); })
+    .attr("class", function(d) { return `bar ${colorclass(d)}`; })
+    .on("mouseover", function(d) {
+      // ttrec_w = ttrec.attr("width")); // THIS WORKS if you ever need dynamic width 
+      var barx = x(xGetter(d)),
+        bary = y(yGetter(d)),
+        ttrec_x = 0;
+      if (barx + ttrec_w/2 > width) { ttrec_x = width - ttrec_w; }
+      else if (barx - ttrec_w/2 < 0) { ttrec_x = 5; }
+      else { ttrec_x = barx - ttrec_w/2; }
+      var ttrec_y = bary - ttrec_h - 25;
+      ttrec
+      .attr("y", ttrec_y)
+      .attr("x", ttrec_x)
+      .attr("opacity", .7);
+      var ttri_x = barx + bw / 2,
+	ttri_y = ttrec_y + ttrec_h;
+      tttri
+	.attr("points", `${ttri_x} ${ttri_y + 10}, ${ttri_x - 10} ${ttri_y}, ${ttri_x + 10} ${ttri_y}`)
+        .attr("opacity", .7);
+      var tttxt_x = ttrec_x + 10
+      tttxt
+        .attr("y", bary - ttrec_h - 15)
+        .attr("x", tttxt_x)
+	.attr("opacity", 0.7)
+      ;
+      tttxt.html(wrap(d.remark, 35).map(line => `<tspan x="${tttxt_x}" dy="10px">${line}</tspan>`).join(''));
+   })
+    .on("mouseout", function(d) {
+      ttrec.attr("opacity", 0);
+      tttxt
+//	.selectAll("text")
+	.attr("opacity", 0);
+      tttri
+        .attr("opacity", 0);
+    })
+  ;
+
+  chart.append("g")
+    .attr("class", "y axis")
+    .call(yAxis)
+    .append("text")
+    .attr("transform", "rotate(-90), translate(" + -Math.round(height/3) + ", -30 )")
+    .style("text-anchor", "end")
+    .text(ylab);
+
+  chart.append("g")
+    .attr("class", "x axis")
+    .attr("transform", "translate(0," + height + ")")
+    .call(xAxis);
+
+  return chart;
+}
+
+
+function wrap(txt, width) {
+  var lines = [],
+    line = [];
+  for (word of txt.split(' ')) {
+    if (line.reduce((x, w) => x+=w.length, 0) > width) { 
+      lines.push(line.join(' '));
+      line = []; 
+    }
+    line.push(word);
+  }
+  if (line.length) lines.push(line.join(' '));
+  return lines;
+}
+
+function dater(d) {
+  return new Date(Date.UTC(2000+Number(d.slice(0,2)), Number(d.slice(2,4))-1, Number(d.slice(4,))))
+}
+
+
+function loadDraw(season, maxdays, int_maxdays) {
+
+  var ol_x = d3.scale.ordinal(),
+    all_x = d3.time.scale(),
+    int_x = d3.time.scale();
+  alldata = d3.tsv(`${season}.txt`, type, function(error, alldata) {
+    latestdate = dater(alldata.slice(-1)[0].date);
+    lastdate_xaxis = new Date(latestdate.getTime() + 24 * 3600 * 1000);
+  
+    maxdays == -1 ? maxdays = 366 : false;
+    int_maxdays == -1 ? int_maxdays = 366 : false;
+    firstdate_season = dater(alldata[0].date);
+    firstdate_all = new Date(latestdate.getTime() - maxdays * 24 * 3600 * 1000)
+    firstdate_all < firstdate_season ? firstdate_all = firstdate_season : false;
+    firstdate_int = new Date(latestdate.getTime() - int_maxdays * 24 * 3600 * 1000);
+    firstdate_int < firstdate_season ? firstdate_int = firstdate_season : false;
+    longdata = alldata.filter(d => dater(d.date) > firstdate_all);
+    intdata = alldata.filter(d => dater(d.date) > firstdate_int).filter(d => d.training !== 'styrke');
+    oldata = alldata.filter(d => dater(d.date) > firstdate_all).filter(d => d.training === 'ol') 
+    console.log(firstdate_all);
+  
+    all_x.domain([firstdate_all, lastdate_xaxis])
+      .range([0, width]);
+      
+    int_x.domain([firstdate_int, lastdate_xaxis])
+      .range([0, intwidth]);
+  
+      ol_x.domain(oldata.map(d=>d.date))
+      .rangeRoundBands([0, olwidth], 0.1);
+  
+    var maxint = Math.max(...intdata.map(d => d.minutes * intmap[d.intensity])) / 100;
+
+  // function makeChart(height, width, svgid, data, x, xIsDate, xGetter, yGetter, ylab, colorclass) {
+    allchart = makeChart(height, width, "allchart", longdata, all_x, true, d=>dater(d.date), d=>d.minutes, "Time (min.)", d => d.training);
+    intchart = makeChart(height, intwidth, "intchart", intdata, int_x, true, d=>dater(d.date), d => d.minutes* intmap[d.intensity] / maxint, "Load percentage", d => intcolmap[d.intensity]);
+    olchart = makeChart(height, olwidth, "olchart", oldata,  ol_x, false, d=>d.date, d => d.minutes, "Time (min.)", d => funmap[d.feeling]);
+  
+    // add asterisk for race
+    ol_bw = ol_x.rangeBand();
+    olchart.selectAll(".asterisk")
+      .data(oldata).enter()
+      .append("text")
+      .attr("class", "fafa")
+      .attr("style", `font-size: ${ol_bw}px`)
+      .attr("fill", "red")
+      .text(d => (d.race === "1" ? "\uf069" : ""))
+      .attr("y", height + 7 + ol_bw) //function(d) { return 0; })
+      .attr("x", function(d) { return ol_x(d.date); });
+  
+    // add heart eye emojis for race
+    var olY = getY(oldata, height, d=>d.minutes);
+    olchart.selectAll(".emoji")
+      .data(oldata).enter()
+      .append("text")
+      .attr("class", "emoji")
+      .attr("style", `font-size: ${ol_bw}px`)
+      .text(d => (d.feeling === "4" ? String.fromCodePoint(0x1F60D) : ""))
+      .attr("y",   d=> olY(d.minutes) + 2 +  ol_bw)
+      .attr("x", function(d) { return ol_x(d.date); });
+  
+  var allleg = allchart.append("g")
+      .attr("class", "legend");
+  legender(allleg, "ol", 50, height + 30, "OL");
+  legender(allleg, "run", 140, height + 30, "Running");
+  legender(allleg, "styrke", 270, height + 30, "Gym");
+  
+  var intleg = intchart.append("g")
+      .attr("class", "legend");
+  legender(intleg, "highint", 50, height + 30, "High");
+  legender(intleg, "medint", 140, height + 30, "Medium");
+  legender(intleg, "lowint", 260, height + 30, "Low");
+  });
+return all_x;
+}
+
+
+
+function legender(leg, colclass, x, y, text) {
+  leg.append("rect")
+    .attr("class", colclass)
+    .attr("x", x)
+    .attr("y", y)
+    .attr("width", 20)
+    .attr("height", 20);
+    leg.append("text")
+    .attr("x", x + 30)
+    .attr("y", y + 15)
+    .text(text);
+}
+
+var olleg = d3.select("#ollegend");
+legender(olleg, "lowint", 0, 40, "Very good");
+legender(olleg, "medint", 0, 70, "OK");
+legender(olleg, "highint", 0, 100, "Disaster");
+
+x = loadDraw("2019", 40, 20);
+
+  </script>
+
+</body>
+</html>

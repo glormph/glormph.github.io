@@ -1,0 +1,101 @@
+date	training	race	intensity	minutes	feeling	remark
+180903	styrke	0	H	60	3	-
+180906	ol	0	M	45	3	korridor rosjo good first half, tired second
+180908	ol	1	H	35	3	Gustavsberg OM8 8m/km very few mistakes (diffuse)
+180909	run	0	L	30	3	Inskolning skugga 2km
+180916	styrke	0	H	60	2	-
+180918	run	0	L	30	3	work
+180920	run	0	L	60	3	nacka
+180922	ol	0	L	45	3	old jarlatraining
+180923	ol	1	H	45	2	stafett DM, bad run and tired after half of 6km
+180925	run	0	L	45	3	-
+181001	styrke	0	H	60	2	-
+181002	run	0	L	30	3	-
+181006	ol	1	H	50	1	25manna open8, many mistakes :(
+181007	ol	1	H	40	3	25mannamedeln open8, 4min mistake total but a lot of good controls
+181009	styrke	0	H	60	2	-
+181011	run	0	L	45	2	-
+181101	run	0	L	75	2	Centrum long run
+181104	ol	1	L	135	3	hostlunken
+181106	styrke	0	H	60	3	-
+181112	ol	0	L	45	2	-
+181114	ol	1	H	60	2	MSBN1 pretty good, Mortsjon, tough and hard OL. Tired at the end!
+181115	run	0	L	90	2	Centrum long run
+181117	run	0	L	45	2	-
+181118	styrke	0	H	60	3	-
+181126	ol	0	L	60	2	Small run to warm up, bad technically
+181128	ol	1	H	60	3	Nattugglan 1 Lida, 10s behind Linus. Tough hilly terrain. Ear problem after
+181202	ol	1	L	100	3	UltraKM attunda open class
+181210	styrke	0	H	45	1	-
+181212	ol	1	H	45	2	MSBN2 lot of following and paths
+181213	run	0	L	90	2	Slow long run w Centrum
+181217	styrke	0	H	60	2	-
+181219	run	0	L	45	3	-
+181227	run	0	L	45	2	-
+181231	run	0	L	45	1	-
+190108	run	0	H	45	3	-
+190112	run	0	L	45	3	-
+190113	ol	1	L	75	2	vinterserien kallbrink, nice feeling, bad time and 4.45m mistake
+190115	styrke	0	H	45	2	-
+190122	run	0	M	45	2	-
+190123	ol	1	H	80	1	vinternattcup sollentuna. 5 bigger mistakes >2min. ok running though
+190126	ol	0	M	60	2	Vinterserien testrun. Very sprinty, hard to keep track of 4000-map
+190127	styrke	0	H	45	2	-
+190131	run	0	M	45	2	-
+190203	styrke	0	H	60	2	-
+190209	ol	0	L	75	2	bad start but better feeling in end. Need training. Got reminded PLAN is everythign in OL
+190213	ol	0	L	45	2	Not bad, took it easy and then it works. Plan, slow running, concentrate
+190215	styrke	0	H	60	2	-
+190219	ol	0	L	45	1	Look ahead, compass in detailed and diffuse terrain. Lots of mistakes
+190220	ol	1	H	60	2	Some good orientering, some bad, and very tired legs in end. Hilly, gommaren
+190221	ol	0	L	75	1	Really shit run at veckans bana but happy and calm at mistakes.
+190224	ol	1	H	60	2	Vinterserien alby-friluftsg. Felt strong, some good orienteering, mistakes at paths
+190301	styrke	0	H	60	2	-
+190305	ol	0	M	75	1	Nackareservatet night with jarla, hard to orienteer, esp bad compass.
+190308	styrke	0	H	60	2	-
+190309	run	0	L	30	2	-
+190310	ol	1	H	60	1	Vinterserien harbro, lots of mistakes and bad mapreading while running. Compass ok
+190312	ol	0	M	45	3	Nackareservatet, maproutine-training. At times very high speed and concentration. "Keep the map at your nose when running"
+190317	styrke	0	H	45	2	-
+190319	ol	0	L	45	3	Reservatet, pretty good, bit weak legs still.
+190402	ol	0	L	45	3	Reservatet, first time after flu
+190404	ol	0	L	45	1	Reservatet, running ok, OL bad, and then I fell, nasty scrapes on hands and legs
+190407	ol	1	H	45	4	Perfect race at ranasstafetten. Medium speed NO MISTAKES
+190414	ol	1	H	45	3	Very nice race at mortsjodubbeln, one mistake (lost concentration) otherwise good
+190415	styrke	0	H	45	2	-
+190416	ol	0	M	60	3	very nice kontrollplock w jarla in alta
+190421	ol	1	H	45	2	uppsala mote medel. 6min miss, many slow bits and not very good run, couldnt get into the map
+190428	styrke	0	H	45	2	-
+190501	ol	1	H	45	3	lidingo medel, pretty good run open8
+190505	ol	1	H	60	3	lovely run at TSKs swedish league open9, only small mistakes and two compass ones
+190512	styrke	0	H	60	2	-
+190514	ol	0	M	45	3	jarla backe up then ol down
+190515	ol	1	H	15	1	SCC1
+190518	ol	0	L	45	3	nackareservatet
+190519	ol	1	H	30	2	medel KM lidingo, quite ok but was a bit too much in a hurry twice, 2min bom.
+190523	styrke	0	H	45	2	-
+190531	styrke	0	H	60	2	-
+190601	ol	0	L	120	2	skavloten
+190602	ol	0	H	45	2	nice run in angarn, rerun om8 LD
+190610	ol	0	L	45	1	felt bad, lack of sleep, ran in finntorp
+190611	ol	1	H	15	2	sprint KM, fairly slow
+190613	ol	0	L	60	2	own run
+190616	ol	1	H	60	2	jukola! not great legs and tough run, and not best orientering
+190618	styrke	0	H	45	1	-
+190619	run	0	L	30	2	forest and paths, nice lap, high blabarsris
+190622	ol	0	L	150	2	rerun of jarladubbeln LD H21 2015, technically hard and quite tough, was very tired, skipped last 4 or so controls
+190629	run	0	M	30	2	-
+190707	run	0	M	45	2	-
+190709	ol	1	H	75	3	mastloppet, rough terrain and hard orientering, couple of bigger mistakes
+190711	ol	0	M	75	2	rerun oppsatralangen nyfors/hojden, very tired legs early on
+190713	ol	0	L	45	3	nackareservatet quick run, legs felt ok again!
+190718	ol	0	M	75	3	nackareservatet masterna brunbild old jarla night training, saw an elk
+190722	ol	1	H	60	3	Oringen E1, defensive run, almost no mistakes
+190723	ol	1	H	60	3	Oringen E2, fantastic long around-path to control, and good orientering throughout, 1 mistake. Afterwards ear/balance problem
+190725	ol	1	L	60	1	Oringen E3, DNF, too much vertigo from ear, walked/jogged K1-3, then home
+190727	ol	1	H	75	2	Oringen E5, very hilly and warm, lost my head a bit around the end, but otherwise ok
+190731	styrke	0	H	60	1	Weak after weeks of not training, did also not run since I had ear problems
+190803	ol	1	M	70	3	Very nice obygdshelg medel but also very hard mapreading, ran quite slow
+190804	ol	1	H	80	3	Even better than medel and mapreading worked better today, more compass and less detail reading, still lost at times
+190808	styrke	0	H	45	2	-
+190814	ol	0	L	45	2	Nackareservatet, no flow, rusty legs

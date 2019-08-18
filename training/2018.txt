@@ -1,0 +1,67 @@
+date	training	race	intensity	minutes	feeling	remark
+171009	styrke	0	H	70	3	-
+171010	ol	0	M	60	2	jarla
+171013	ol	0	L	45	2	nattKM control placing
+171014	ol	0	L	45	2	nattKM control collection
+171016	styrke	0	H	70	3	-
+171024	ol	0	M	75	2	jarla korridor, HARD
+171026	ol	0	M	60	2	centrum nacken
+171027	ol	1	M	80	2	haningenatt, quit, too hard
+171101	styrke	0	H	45	2	-
+171106	styrke	0	H	45	2	-
+171109	run	0	H	30	2	6 backe interval reps maxfart
+171111	ol	0	L	100	2	same korridor but daytime
+171117	styrke	0	H	60	2	-
+171122	styrke	0	H	60	2	-
+171123	ol	0	M	50	2	centrum altorp
+171125	ol	0	M	60	2	reservatet veckans bana
+171125	run	0	L	45	2	-
+171204	run	0	H	30	2	interval backe 6 reps max
+171206	styrke	0	H	70	2	-
+171210	ol	0	L	45	2	reservatet
+171212	run	0	L	45	2	-
+171220	ol	1	H	60	2	nattugglan, 6min bom, annars bra
+171223	ol	0	L	120	2	vaxholm ld fakirpass
+171227	ol	0	L	45	2	lugnt pass nattkorridor nackares.
+180103	ol	1	M	80	2	vinterserien gömmaren, knäskada annars bra flyt
+180108	styrke	0	H	60	2	-
+180109	ol	0	L	30	2	reservatet
+180110	ol	1	H	60	3	MSBN3 en stor bom men annars kul
+180112	styrke	0	H	60	2	-
+180117	run	0	H	20	2	intervals pulling a snowracer
+180118	run	0	L	45	2	-
+180122	styrke	0	H	60	2	-
+180123	ol	0	L	45	2	reservatet
+180124	ol	1	H	75	2	nattugglan bommade en 5min K4 paradiset
+180127	ol	0	L	120	3	paradiset fakirpass
+180130	styrke	0	H	60	2	-
+180204	ol	0	L	30	2	-
+180206	ol	0	L	30	2	nyckelviken
+180207	ol	1	H	45	3	MSBN4 lot of paths and good result. tired so 2x1min mistake on last
+180209	styrke	0	H	60	2	-
+180210	ol	0	L	120	3	fakir gaaloe 70talskarta 15km
+180212	run	0	L	45	2	-
+180221	styrke	0	H	60	2	-
+180224	ol	0	L	120	3	fakir lindholm rotis grafstroem
+180226	skidor	0	L	60	3	-
+180305	styrke	0	H	60	2	-
+180305	run	0	M	30	2	-
+180306	run	0	M	30	2	-
+180308	ol	0	M	60	2	nackareservatet, djup sno, tunga ben
+180310	ol	0	L	110	3	fakir hos lindholm m samuel linus jonask lindholms berring
+180314	run	0	H	20	3	interval backe 8 reps max
+180316	run	0	L	45	3	-
+180319	styrke	0	M	60	1	-
+180321	run	0	H	20	2	interval long backe 5 reps max
+180324	ol	0	M	70	3	nackareservat w brinkman in snow quite heavy
+180328	styrke	0	M	60	2	-
+180402	ol	1	H	40	2	kringeltraffen. ngn bom men gick ratt bra
+180403	ol	0	M	50	3	jarla, lite sno kvar ny reservatkarta
+180405	ol	0	M	90	3	centrum vasterhaninge hanveden tiomila 10km skymn, bra jobbat
+180408	ol	1	H	40	2	satra MIK medeln, en 4minuters bom sluttningsbrant, annars bra
+180409	styrke	0	H	60	2	-
+180415	styrke	0	H	60	2	-
+180417	ol	0	H	45	3	jarla backintervaller med orientering nedfor
+180420	ol	0	H	90	2	uppsala natt tuff gristerrang
+180422	ol	1	H	40	3	jarfalla i hallkana, after that, foot pain for months
+180424	styrke	0	M	60	2	-
