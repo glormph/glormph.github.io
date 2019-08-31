@@ -99,3 +99,9 @@ date	training	race	intensity	minutes	feeling	remark
 190804	ol	1	H	80	3	Even better than medel and mapreading worked better today, more compass and less detail reading, still lost at times
 190808	styrke	0	H	45	2	-
 190814	ol	0	L	45	2	Nackareservatet, no flow, rusty legs
+190819	styrke	0	H	60	2	-
+190821	ol	1	H	30	1	Tullinge teamsprint, with Agnes: one OK run, one bad, one disaster, sprained ankle up into shin also :(
+190822	ol	0	M	70	2	masmo av Janne/M.Holmberg, OK long, coarse orientering but bad and hard close to controls, 7k, legs finished at the end
+190825	ol	1	H	40	3	TMOK dubbel i Aavinge, very good, little stopping and only small mistakes!
+190829	styrke	0	H	45	2	-
+190831	ol	0	L	45	2	Tyreso-flaten/hojden, OK run
