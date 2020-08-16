@@ -2,7 +2,7 @@ Från nolla till skräll
 -----
 <sup>Jorrit Boekel, Centrum OK, augusti 2020</sup>
 
-Orientering är svår för en nybörjare som jag var en gång: i min första skogstävling (ÖM5, 2011) bommade jag 
+Orientering är svårt för en nybörjare som jag var en gång: i min första skogstävling (ÖM5, 2011) bommade jag 
 45 minuter på en kort sträcka, jag hade ingen GPS men jag gjorde ungefär samma bom som
 [Henrik visar här](http://www.centrumkartor.se/show_map.php?user=a95henhe&map=1678 "Det såg så lätt ut på kartan"). Och jag förklarar fortfarande för nya bekanta att jag som 30-åring 
 en gång fick 5 minuters stryk på Luffarligan 2011 av någon som var född 1937.
@@ -12,13 +12,13 @@ minns en hel del frustration alla gånger jag kom med trötta ben i mål till
 omklädningen i Kärrtorp, och såg att de andra redan hade duschat.
 
 
-Sen dess har jag upplevt min utveckling som väldigt stegartat: man hittar någon ny kunskap,
+Sen dess har jag upplevt att min utveckling går i tydliga steg: man hittar någon ny kunskap,
 sen är man på en platå ett tag tills man hittar nästa. Det enda som har varit 
 relativt lätt var löpningen: jag har ett långt förflutet av konditionsidrott och
 väger inte så mycket mer än Musen per längdenhet. Därmed har jag varit konditionsmässigt 
-lättränad och haft bra spurttider sen jag började, men nog om det nu, även 
-inflyttade får lyda under Jante. Dessutom hjälper det inte att springa fort när riktningen är fel, snarare tvärtom. Och skogslöpning är 
-också annorlunda än bara kondition, jag kommer ihåg en period där jag sprang med de snabbaste i klubben på 
+lättränad och haft bra spurttider sen jag började. (Nog om det nu, även 
+inflyttade får lyda under Jante.) Det hjälper ändå inte att springa fort när riktningen är fel, snarare tvärtom. Och skogslöpning kräver också 
+mer än bara kondition och "vanlig" löphastighet, jag kommer ihåg en period där jag sprang med de snabbaste i klubben på 
 asfaltsintervaller, men fick spö i ren hastighet i skogen av "långsammare" löpare.
 Höga knän, uppför och nedför, forcera hyggen och grön skog är inte samma sak som 3000m bana.
 Men även om det blev lite bättre av att träna att springa hårt terräng, så förblev 
@@ -26,35 +26,35 @@ orienteringen det svåra.  Ett till problem är att det inte riktigt går att
 träna en person tekniskt som man gör i andra idrotter (eller simskolan) där man ser vad utövarna gör. 
 OL-löpare springer ju bort in i skogen, och dessutom sker hälften av sporten inne i 
 huvudet. Jag tror absolut att vissa verkar ha mer talang
-för själva orienterandet, men det satt mycket längre inne än jag hoppades på i 2011.
+för själva orienterandet, men för mig satt det mycket längre in än jag hoppades på i 2011.
 
-Men efter ett tag i Centrum OK blev jag snabbt bättre på att orientera och kunde
-springa svarta banor. Men det var svårt, och med väldigt växlande resultat. Snabba 
+Men efter ett tag i Centrum OK blev jag lite bättre på att orientera och kunde
+springa svarta banor. Tyvärr med väldigt växlande resultat. Snabba 
 sträckor avlöstes av 10-minuters bommar, så mina bästa resultat var masstarter där 
-man kunde hänga och syfta lite rätt för att undvika fel gaffel. Höjdpunkten i
+man kunde hänga och syfta lite rätt med kompassen för att undvika fel gaffel. Höjdpunkten i
 kategorin var Tiomila 2013, sista sträcka i omstart, där jag visste att jag hade
 samma gaffel som Jerk, och bara hängde på. Det var ändå rätt tufft för han sprang
 jäkla fort, men det gick och jag hade aldrig sprungit OL så fort eller långt.
 
 Efter det var det lite som om jag inte gjorde framsteg alls, och nåt år senare bestämde jag
 att göra nåt åt det. Jag förstod att flaskhalsen var min orientering, jag kunde i princip
-bomma 15 minuter, men bara springa ikapp 1 minut. Analyserade mina lopp, slutade med nästan all 
-träning som inte hade karta, gick med i Järla som träningsmedlem för att maxa 
+bomma 15 minuter, men bara springa ikapp 1 minut. Så jag började analysera mina lopp, slutade med nästan all 
+träning som inte hade karta, blev med i Fakirgänget när jag kunde ha sovit, gick med i Järla som träningsmedlem för att maxa 
 antalet kartträningar per vecka och efter ett tag blev det lite bättre. Taktiken var
 att jag måste öva karta för att snabbt kunna översätta terräng-karta och tillbaka.
-Dessutom fick jag gratis löpträning ändå när jag springer orientering. Och min teknik
+Löpträningen fick jag på kuppen när jag ändå sprang orientering. Och min teknik
 var då på en sån nivå att jag oftast hade kondition kvar till upploppet. Det var
 någon gång här jag också upptäckte det utmärkta [elitskola-dokumentet](http://www.okorion.com/elit/traning/elitskola1.pdf) av OK Orion.
 Jag började förstå lite bättre __hur__ man orienterar (förlänga, sista säkra, etc),
-och bommen blev mindre.
+och bommarna blev mindre.
 
-Men fortfarande, hur slår man rävar som Linus, maskinen Ågren, eller Oskar Karlin
+Men jag undrade fortfarande, hur slår man rävar som Linus, maskinen Ågren, eller Oskar Karlin
 när han är otränad? Jag fann mig på en platå igen, då någon sa ungefär att 
 > om du inte sträckbommar mer än fem minuter, fem tävlingar i rad är du en OK orienterare.
 
 Lät rimligt tyckte jag, men det var jobbigt att veta, för jag gjorde
 \>5-minuters bommar på var och varannan tävling. Nästa steg blev att jag läste elitskolan
-en gång till och fick ut mer av det än förra gången: jag måste planera. Ordentligt, på riktigt.
+en gång till och fick ut en till viktig sak som kanske kom bort förra gången: jag måste planera sträckor. Ordentligt, på riktigt.
 Så på O-ringen 2018 skrev jag en lapp till mig själv, sparade den i kompassfodralet,
 på den stod:
 
@@ -68,7 +68,7 @@ på den stod:
 
 Detta _gjorde_ jag ändå inte exakt, men sträckplanerandet funkade lite bättre då jag tog mig tid, och 
 jag kom in i en bra koncentration före tävlingen, som jag behövde. Ett annat tips
-är att ha starttid, eller om du springer öppen, hitta på en. Min koncentration
+är att ha starttid, eller om du har fri starttid, hitta på en. Min koncentration
 ökas enormt för jag blir nervös av starttider. Eller av att springa stafett, 
 vilket ledde till ett av mina allra bästa lopp hittills på Rånäs 2019, där jag 
 sprang väldigt koncentrerat och lite defensivt. Be mig inte att springa startsträckan
@@ -77,7 +77,7 @@ bara, det har inte funkat så bra än så länge.
 Då hade jag bara ett steg kvar för att bli elit. Jag skämtar såklart men det fanns bara 
 ett steg kvar tills min nuvarande nivå. Och det steget formades av att jag hittade 
 [Thierry Gueorgiou's berättelse](https://www.orienteering.ie/wp-content/uploads/2013/02/thierry_gueorgiou_woc_middle_distance_route_description.pdf "Sikta högt och kolla hur världsmästaren gör det") om hur han vann VM guld på medel 2004,
-sträcka för sträcka. Jag var säker på att ha läst den innan, men den här gången i 2020,
+sträcka för sträcka. Jag var säker på att jag hade läst den förut, men den här gången (2020)
 blev det en eye-opener. Nu visste jag att jag skulle:
 
 + Tänka på att det är bara att läsa kartan
@@ -93,10 +93,10 @@ bommade mer än jag. Jag gjorde såklart inte precis som Thierry gjorde, men lit
 som hållpunkterna ovan, och viktigast: jag läste dokumentet innan tävling, 
 hade exemplen och tänket färskt i huvudet och därmed koncentration hela vägen in i mål.
 Två veckor senare blev det tyvärr ändå pannkaka på medel KM, trots att jag upprepade
-procedyren. Jo, jag var totalt övertänt pga den tidigare vinsten, sprang för
+proceduren. Jag var då totalt övertänd pga den tidigare vinsten, sprang för
 fort, och bommade redan ordentligt på väg till ettan. Sedan är medel en annan
 femma då man måste vara snabb även i sträckplaneringen, medan man på långdistans har 
-lite mer sekunder på sig att välja väg, i mitt fall ofta stillastående bredvid
+lite fler sekunder på sig att välja väg, i mitt fall ofta stillastående bredvid
 en kontroll.
 
 Gueorgiou nämner det där också, "feature selection", vilket är att
@@ -119,14 +119,14 @@ allt jämfört med t.ex. gym eller löpning. Då brukar jag tänka på de följa
 
 > Den bästa träning är den som blir av (allmän visdom)
 
-> Träna så lite som möjligt för att bli så bra som möjligt (Martin Regborn)
+> Träna så lite som möjligt för att bli så bra som möjligt ([Martin Regborn](http://www.oringen.se/213/arsneutrala-sidor/om-oss/folj-o-ringen/radio-o-ringen/podcast-arkiv/2017-04-04-pod-80---martin-regborn-gar-sin-egen-vag---helst-uppfor.html))
 
-Tänk bara att träna det rätta, det som du vill bli bättre på. Att träna ett extra
+Tänk bara på att träna det rätta, det som du vill bli bättre på. Att träna ett extra
 pass styrke kommer göra mig starkare men inte bättre på kartläsning, mer än 
-marginellt som sidoeffekt. Däremot är det bra med alternativa träningsformer som 
-avväxling när det passar. En annan sak är att jag bor rätt nära väldigt bra 
+marginellt som sidoeffekt. Däremot är det bra för min hjärna med alternativa träningsformer som 
+omväxling när det passar. En annan sak är att jag bor rätt nära väldigt bra 
 orienteringsskog, och tränar en del ensamt. Men jag vill för all del inte glömma 
-att det är viktigt att träffa klubbkompisar, även om det innebär att springa ett 
+att det är viktigt att träffa (klubb)kompisar, även om det innebär att springa ett 
 intervallpass på asfalt någon gång ;). Arrangera träning och tävling lär man sig också av.
 
 -----
